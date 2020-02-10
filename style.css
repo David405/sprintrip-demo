@@ -151,10 +151,9 @@ b {
     text-shadow: black;
 }
 
-.log {
-   height: 100%;
-   max-width: 50%;
-   margin-left: 50px;
+@media screen and (max-width: 576px) {
+.mobile-social {
+    display: none;
+    }
 }
-
 
