@@ -18,11 +18,13 @@ p {
 
 .button {
     margin-top: 10px;
-    margin-left: 220px;
+    margin-right: 90px;
+    float: right;
 }
   
 .text {
     padding-right: 50px;
+    padding-left: 50px;
     margin-top: 50px;
     font-family: 'Poppins', sans-serif;
 }
@@ -79,15 +81,17 @@ b {
   
   /* Add styles to the form container */
   .form-container {
-    max-width: 300px;
+    max-width: 250px;
     font-size: 12px;
+    padding: 0px 10px 10px 10px;
+    background-color: rgb(223, 219, 219);
   }
   
   /* Full-width textarea */
   .form-container textarea {
     width: 90%;
     padding: 15px;
-    margin: 5px 0 22px 0;
+   
     border: none;
     background: #f1f1f1;
     resize: none;
@@ -126,14 +130,10 @@ b {
   }
 
   .form-header {
-      background-color: rgb(106, 201, 68);
+      background-color: green;
       height: 50px;
-      border-radius: 15x;
+      border-radius: 15px;
       text-align: center;
-  }
-
-  .success {
-    background-color: rgb(106, 201, 68);
   }
 
   .parent {
@@ -177,9 +177,25 @@ b {
     text-shadow: black;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
 .mobile-social {
     display: none;
     }
 }
 
+.l-btn {
+    padding-left: 100px;
+    border: none;
+    background-color: rgb(223, 219, 219);
+}
+
+.l-send {
+    float: right;
+    border: none;
+    margin-right: 20px;
+    background-color: rgb(223, 219, 219);
+}
+
+.info {
+    margin-top: 100px;
+}
