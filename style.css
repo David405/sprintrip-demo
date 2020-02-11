@@ -18,7 +18,7 @@ p {
 
 .button {
     margin-top: 10px;
-    margin-left: 300px;
+    margin-left: 220px;
 }
   
 .text {
@@ -27,7 +27,14 @@ p {
     font-family: 'Poppins', sans-serif;
 }
 
-.title {
+.text a {
+    font-size: 2rem;
+    color: green;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+}
+
+.text a:hover {
     font-size: 2rem;
     color: green;
     font-family: 'Ubuntu', sans-serif;
@@ -73,6 +80,7 @@ b {
   /* Add styles to the form container */
   .form-container {
     max-width: 300px;
+    font-size: 12px;
   }
   
   /* Full-width textarea */
@@ -83,7 +91,20 @@ b {
     border: none;
     background: #f1f1f1;
     resize: none;
-    min-height: 200px;
+    min-height: 2px;
+    font-size: 12px;
+  }
+
+  .form-container ::placeholder {
+      font-size: 12px;
+  }
+
+  .form-container b {
+      font-size: 12px;
+  }
+
+  .form-control {
+      border-radius: 15px;
   }
   
   /* When the textarea gets focus, do something */
@@ -98,16 +119,21 @@ b {
   }
 
   h4 {
-      color: green;
+      color: white;
       font-weight: bolder;
       padding-top: 10px;
+      font-size: 15px;
   }
 
-  .form-heade {
-      background-color: rgb(50,205,50);
+  .form-header {
+      background-color: rgb(106, 201, 68);
       height: 50px;
-      border-radius: 5px;
+      border-radius: 15x;
       text-align: center;
+  }
+
+  .success {
+    background-color: rgb(106, 201, 68);
   }
 
   .parent {
@@ -144,7 +170,7 @@ b {
     text-align: left;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
     float: left;
     margin-right: 360px;
     padding-left: 20px;
