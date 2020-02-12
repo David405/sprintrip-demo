@@ -91,7 +91,6 @@ b {
   .form-container textarea {
     width: 90%;
     padding: 15px;
-   
     border: none;
     background: #f1f1f1;
     resize: none;
@@ -170,7 +169,7 @@ b {
     text-align: left;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
     float: left;
     margin-right: 360px;
     padding-left: 20px;
@@ -197,5 +196,5 @@ b {
 }
 
 .info {
-    margin-top: 100px;
+    margin-top: 50px;
 }

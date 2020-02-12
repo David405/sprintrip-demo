@@ -1,6 +1,8 @@
 <!DOCTYPE html>
     <html>
         <head>
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
@@ -89,15 +91,55 @@
                                 <button type="submit" class="btn btn-success">Submit</button>
                             </form>
                     </div>
-                    <a class="open-button" onclick="openForm()"><svg width="36" height="36" viewBox="0 0 36 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M4.22403 0.0429993H31.776C33.676 0.0429993 35.22 1.587 35.22 3.487V37.957L28.337 34.483H4.22403C2.32403 34.483 0.780029 32.939 0.780029 31.039V3.487C0.780029 1.587 2.32403 0.0429993 4.22403 0.0429993ZM28.691 21.612C28.91 21.498 29.164 21.473 29.399 21.544C29.634 21.618 29.831 21.779 29.946
-                       21.995C30.06 22.215 30.085 22.468 30.014 22.703C29.943 22.938 29.779 23.136 29.563 23.25C27.73 24.224 25.792 24.987 23.786 25.525C21.891 26.029 19.941 26.285 17.978 26.288C16.022 
-                      26.285 14.072 26.029 12.18 25.525C10.183 24.987 8.25804
-                       24.224 6.43404 23.25C6.21804 23.133 6.05702 22.935 5.98602 22.7C5.91502 22.465 5.94003 22.212 6.05403
-                        21.995C6.17203 21.779 6.36903 21.615 6.60403 21.544C6.83903 21.473 7.09303 21.498 7.31203 21.615C9.00603 22.521 10.802 23.232 12.659 23.732C14.396 24.196 16.183 24.431 17.978 24.434C19.777 24.431 21.57 24.193 23.31 23.732C25.177 23.232 26.982 22.521 28.691 21.612Z" fill="white"/>
-                      </svg>                
-                  </a>
-      
+                 
+              <div class="modal fade" id="question_form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header text-center">
+                      <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body mx-3">
+                      <div class="md-form mb-5">
+                        <i class="fas fa-user prefix grey-text" style="color: green;"></i>
+                        <input type="text" id="qus_name" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="qus_name">Your name</label>
+                      </div>
+
+                      <div class="md-form mb-5">
+                        <i class="fas fa-envelope prefix grey-text" style="color: green;"></i>
+                        <input type="email" id="qus_email" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="qus_email">Your email</label>
+                      </div>
+
+                      <div class="md-form">
+                        <i class="fa fa-pencil prefix grey-text" style="color: green;"></i>
+                        <textarea type="text" id="question" class="md-textarea form-control" rows="4"></textarea>
+                        <label data-error="wrong" data-success="right" for="question">Your message</label>
+                      </div>
+
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button type="submit" class="btn btn-success">Send <i class="fas fa-paper-plane ml-1" style="color: white;"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-center">
+                <a class="open-button" data-toggle="modal" data-target="#question_form"><svg width="36" height="36" viewBox="0 0 36 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.22403 0.0429993H31.776C33.676 0.0429993 35.22 1.587 35.22 3.487V37.957L28.337 34.483H4.22403C2.32403 34.483 0.780029 32.939 0.780029 31.039V3.487C0.780029 1.587 2.32403 0.0429993 4.22403 0.0429993ZM28.691 21.612C28.91 21.498 29.164 21.473 29.399 21.544C29.634 21.618 29.831 21.779 29.946
+                   21.995C30.06 22.215 30.085 22.468 30.014 22.703C29.943 22.938 29.779 23.136 29.563 23.25C27.73 24.224 25.792 24.987 23.786 25.525C21.891 26.029 19.941 26.285 17.978 26.288C16.022 
+                  26.285 14.072 26.029 12.18 25.525C10.183 24.987 8.25804
+                   24.224 6.43404 23.25C6.21804 23.133 6.05702 22.935 5.98602 22.7C5.91502 22.465 5.94003 22.212 6.05403
+                    21.995C6.17203 21.779 6.36903 21.615 6.60403 21.544C6.83903 21.473 7.09303 21.498 7.31203 21.615C9.00603 22.521 10.802 23.232 12.659 23.732C14.396 24.196 16.183 24.431 17.978 24.434C19.777 24.431 21.57 24.193 23.31 23.732C25.177 23.232 26.982 22.521 28.691 21.612Z" fill="white"/>
+                  </svg>                
+              </a>
+              </div>
+
                     <div class="chat-popup" id="myForm">
                       <form id="question_form" class="form-container">
                        <div class="form-header">
