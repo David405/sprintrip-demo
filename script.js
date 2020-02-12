@@ -1,10 +1,3 @@
-function openForm() {
-    document.getElementById("myForm").style.display = "block";
-  }
-  
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-  }
 
 //subscribe to email
 var email_Input = document.getElementById("email_only");
